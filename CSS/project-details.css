@@ -1,0 +1,73 @@
+body {
+    overflow-x: hidden;
+    background-color: #000330;
+    /* color: rgb(231, 235, 222); */
+    color: rgb(255, 255, 255);
+    /* color: rgb(223, 228, 212); */
+}
+
+
+.video-container {
+    overflow: hidden;
+    height: 70vh;
+    width: 100%;
+}
+
+.hover-video {
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+    /* السلاسة */
+}
+
+h1{
+    color: #ffcc00;
+}
+
+h2 {
+    display: inline-block; /* النص يأخذ فقط عرضه */
+    /* background-color: aquamarine; */
+    position: relative;
+    padding: 10px 20px; /* تباعد داخلي متناسق */
+    margin: 20px auto; /* توسيط العنصر داخل الحاوية */
+    text-align: center; /* توسيط النص داخل العنصر */
+    white-space: nowrap; /* لمنع النص من الانكسار على أكثر من سطر */
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    width: 100%; /* عرض الخط مساوي للنص */
+    height: 3px;
+    bottom: -5px; /* المسافة بين النص والخط */
+    left: 0; /* الخط يبدأ من بداية النص */
+    background-color: #ffcc00;
+}
+
+
+
+.col-in-tech {
+    padding: 0px;
+    /* height: 280px; */
+    background-color: rgb(27, 32, 69);
+    border-radius: 5px;
+    box-shadow: -2px -2px 5px rgba(255, 255, 255, 0.2);
+    height: 200px;
+
+}
+
+
+.col-in-tech img {
+    width: 50%;
+    height: 60%;
+}
+
+.w-90{
+    width: 90%;
+}
+/* إخفاء العنوان مبدئيًا */
+
+
+
+/* في ملف CSS الخاص بك */
+

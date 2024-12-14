@@ -1,0 +1,430 @@
+a {
+    cursor: pointer;
+    text-decoration: none;
+    /* لإلغاء الخط تحت الرابط */
+}
+
+body {
+    background-color: #000330;
+    overflow-x: hidden;
+}
+
+
+/* nav bar */
+.navbar-collapse {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.navbar {
+    position: fixed;
+    z-index: 99999999999;
+    width: 100%;
+    background-color: #000333 !important;
+    color: white !important;
+    transition: top 0.8s ease-in, opacity 0.8s ease-in;
+    /* Transition for the navbar */
+    /* height: 60px; */
+    top: 0;
+    /* تأكد من أن القيمة الابتدائية لـ top هي 0 */
+    opacity: 1;
+    border-bottom: 1px solid #d7d7d7;
+}
+
+.navbar.hidden {
+    top: -60px;
+    /* Adjust this value based on your navbar height */
+    opacity: 0;
+}
+
+
+.navbar .nav-item a {
+    color: white;
+}
+
+.outer-contact-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ffcc00;
+}
+
+.hme {
+    color: #ffcc00;
+    transition: transform 0.3s ease-in;
+}
+
+.hme:hover {
+    color: #ffcc00;
+    transform: scale(1.1);
+}
+
+
+.cont-style {
+    border: 1px solid white;
+    border-radius: 20px;
+}
+
+.cont-style i {
+    color: #000330;
+}
+
+.mobile {
+    display: none;
+}
+
+.labtop {
+    display: flex;
+}
+
+/* .icon{
+    border: 2px solid #ffcc00;
+    border-radius: 2px;
+} */
+
+.nav-link.active {
+    border-radius: 10px;
+    background-color: #ffcc00; /* اللون الأساسي */
+    color: #000330 !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* إضافة ظل */
+    transform: scale(1.05); /* تأثير تكبير خفيف */
+    transition: all 0.3s ease-in-out; /* حركة سلسة */
+}
+
+.nav-link:hover {
+    border-radius: 10px;
+    background-color: #ffe066; /* لون قريب من active */
+    color: #000330 !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* ظل أخف */
+    transform: scale(1.02); /* تكبير أقل من حالة active */
+    transition: all 0.3s ease-in-out; /* حركة سلسة */
+}
+
+
+
+/* إعدادات عامة */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    /* overflow: hidden; */
+}
+
+/* home */
+
+/* تصميم الـ Section */
+.home {
+    height: 100vh;
+    background: radial-gradient(circle, #03238e, #000000);
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* النص الرئيسي */
+.main-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+    animation: fadeIn 1.5s ease-in-out;
+    letter-spacing: 1.5px;
+}
+
+/* النص الثانوي */
+.subtitle {
+    font-size: 1.2rem;
+    color: #cccccc;
+    margin-top: 10px;
+}
+
+/* تأثير النصوص المتغيرة */
+#typing-effect {
+    color: #ffcc00;
+    border-right: 3px solid #ffcc00;
+    animation: blink 0.7s step-end infinite;
+}
+
+/* تأثير الكتابة */
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+/* حركة Fade-In للنص */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* إضافات بصرية */
+.home::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 180%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.2), transparent);
+    animation: rotateBG 10s linear infinite;
+    z-index: 0;
+}
+
+@keyframes rotateBG {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.home-content {
+    z-index: 1;
+}
+
+/* ABOUT */
+.about {
+    height: 100vh;
+    background-color: #000330;
+    /* overflow: hidden; */
+}
+
+.fs-small {
+    font-size: 1rem;
+}
+
+.col {
+    color: #ffcc00;
+}
+
+.text-blue a {
+    color: #000330 !important;
+}
+
+.btn-outline-Lemon {
+    background-color: #ffcc00;
+    color: #000330 !important;
+    border-radius: 20px;
+}
+
+
+.btn-outline-Lemon:hover {
+    background-color: #ffcc00;
+    color: #000330 !important;
+}
+
+/* skills */
+
+.skills {
+    overflow: hidden;
+}
+
+.col-in-skill {
+    padding: 5px;
+    /* height: 280px; */
+    background-color: rgb(27, 32, 69);
+    border-radius: 5px;
+    box-shadow: -2px -2px 5px rgba(255, 255, 255, 0.2);
+    height: 180px;
+}
+
+
+
+
+.bord {
+    border-radius: 5px;
+}
+
+.col-in-skill img {
+    width: 80%;
+    height: 60%;
+}
+
+.col-in-skill i {
+    font-size: 90px;
+    color: radial-gradient(circle, #ffcc00, #000333);
+}
+
+.fs-mid {
+    font-size: 2.5rem;
+}
+
+.bg-dark-blue {
+    background-color: rgb(27, 32, 69);
+    height: 100%;
+}
+
+/* projects */
+
+.projects{
+    overflow: hidden;
+}
+
+.h-80 {
+    height: 80%;
+}
+
+.bg-blue {
+    background-color: rgb(27, 32, 69);
+    color: #ffcc00;
+}
+
+.video-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.hover-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    /* السلاسة */
+}
+
+.video-container:hover .hover-video {
+    opacity: 1;
+    /* إظهار الفيديو عند تمرير الماوس */
+}
+
+.video-container img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s ease;
+}
+
+.video-container:hover img {
+    opacity: 0;
+    /* إخفاء الصورة عند تمرير الماوس */
+}
+
+.txt-lemon {
+    color: #ffcc00;
+}
+
+.card2 {
+    height: 450px;
+}
+
+/* CONTACT */
+.contact {
+    background-color: #000330;
+    height: 105vh;
+}
+
+.bg-blue2 {
+    background-color: rgb(255, 255, 255);
+    color: #000330;
+    border-radius: 20px;
+}
+
+.bg-blue3 {
+    background-color: rgb(27, 32, 69);
+    color: white;
+    border-radius: 20px;
+}
+
+
+
+.break-text {
+    word-wrap: break-word; /* يلف النص تلقائياً عند انتهاء السطر */
+    word-break: break-word; /* يدعم كسر النص الطويل */
+    white-space: normal; /* يعطل النص الذي يكون في سطر واحد */
+}
+
+@media (max-width: 1200px) {
+
+    .col-in-skill {
+        height: 220px;
+
+    }
+}
+
+@media (max-width: 765px) {
+
+    .mobile {
+        display: block;
+    }
+
+    .labtop {
+        display: none;
+    }
+
+    .navbar-collapse {
+        display: block;
+        /* ترتيب العناصر عمودياً */
+    }
+
+    .col-in-skill {
+        height: auto;
+    }
+
+    .cont-style {
+        border: none;
+    }
+
+    .del-pad {
+        padding: 0px;
+    }
+
+    .navbar .nav-item a {
+        padding-left: 5px;
+        margin-top: 8px;
+    }
+
+    .final {
+        width: 100%;
+    }
+    
+
+    .navbar {
+        width: 100vw;
+        padding: 0px 8px;
+    }
+
+    .col-in-skill {
+        
+        height: 160px;
+    }
+
+    .exp{
+        box-shadow: -2px -2px 5px rgba(255, 255, 255, 0.2);
+    }
+
+    .home::before {
+        top: -72%;
+        left: -5%;
+        width: 110%;
+        height: 250%;
+    }
+
+    .main-title{
+        font-size: 28px;
+
+    }
+    .subtitle{
+        font-size: 15px;
+    }
+
+}

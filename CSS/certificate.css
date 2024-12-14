@@ -1,0 +1,142 @@
+.navbar {
+  width: 100%;
+  background-color: #000333 !important;
+  color: white !important;
+  transition: top 0.8s ease-in, opacity 0.8s ease-in;
+  /* Transition for the navbar */
+  /* height: 60px; */
+  top: 0;
+  /* تأكد من أن القيمة الابتدائية لـ top هي 0 */
+  opacity: 1;
+  border-bottom: 1px solid #d7d7d7;
+}
+
+.navbar.hidden {
+  top: -60px;
+  /* Adjust this value based on your navbar height */
+  opacity: 0;
+}
+
+
+.navbar .nav-item a {
+  color: white;
+}
+
+
+.hme {
+  color: #ffcc00;
+  transition: transform 0.3s ease-in;
+}
+
+.hme:hover {
+  color: #ffcc00;
+  transform: scale(1.1);
+}
+
+
+
+.nav-link.active {
+  border-radius: 10px;
+  background-color: #ffcc00; /* اللون الأساسي */
+  color: #000330 !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* إضافة ظل */
+  transform: scale(1.05); /* تأثير تكبير خفيف */
+  transition: all 0.3s ease-in-out; /* حركة سلسة */
+}
+
+.nav-link:hover {
+  border-radius: 10px;
+  background-color: #ffe066; /* لون قريب من active */
+  color: #000330 !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* ظل أخف */
+  transform: scale(1.02); /* تكبير أقل من حالة active */
+  transition: all 0.3s ease-in-out; /* حركة سلسة */
+}
+
+
+.txt-yellow{
+  color: #ffcc00;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+  background-color: #000330; /* خلفية داكنة */
+  color: #ffffff; /* نص أبيض لراحة العين */
+  font-family: 'Poppins', sans-serif; /* تحديد الخط */
+  overflow-x: hidden;
+}
+
+h2 {
+  color: #ffcc00; /* الذهب للعناوين */
+  text-align: center;
+  position: relative;
+  padding: 20px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 30px; /* تباعد إضافي تحت العنوان */
+}
+
+.card {
+  background-color: #1b2045; /* خلفية داكنة للكروت */
+  color: #ffffff; /* نص أبيض للكروت */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #ffcc00; /* حدود بلون ذهبي */
+  border-radius: 15px; /* زوايا دائرية ناعمة */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* تأثير ظل خفيف للكروت */
+  padding: 10px;
+  font-family: 'Poppins', sans-serif; /* الخط المفضل */
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(255, 204, 0, 0.3); /* توهج ذهبي خفيف عند التمرير */
+}
+
+.card-title {
+  color: #ffcc00; /* الذهب للعناوين داخل الكروت */
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 1rem;
+  margin-top: 10px;
+  line-height: 1.8;
+  color: #dcdcdc; /* نص بلون رمادي فاتح لراحة العين */
+}
+
+.course-card {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1); /* تأثير ظل حديث وأنيق */
+}
+
+.btn-gold {
+  background-color: #ffcc00; /* زر بالذهب */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif; /* إضافة الخط هنا أيضًا */
+}
+
+.btn-gold:hover {
+  background-color: #e3b601; /* توهج ذهبي أغمق عند التمرير */
+  color: white; /* النص يظل أبيض عند التمرير */
+}
