@@ -140,3 +140,13 @@ h2 {
   background-color: #e3b601; /* توهج ذهبي أغمق عند التمرير */
   color: white; /* النص يظل أبيض عند التمرير */
 }
+
+
+.card{
+  height: 460px;
+}
+
+.card-img-top{
+  height: 200px;
+  object-fit: cover;
+}
